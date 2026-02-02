@@ -1,35 +1,29 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-
-class SimpleCNN(nn.Module):
+class CNNLSTM(nn.Module):
     def __init__(self, num_classes=5):
-        super(SimpleCNN, self).__init__()
-
-        self.conv1 = nn.Conv2d(1, 16, kernel_size=3, padding=1)
-        self.bn1 = nn.BatchNorm2d(16)
-        self.pool1 = nn.MaxPool2d(2)
-
-        self.conv2 = nn.Conv2d(16, 32, kernel_size=3, padding=1)
-        self.bn2 = nn.BatchNorm2d(32)
-        self.pool2 = nn.MaxPool2d(2)
-
-        self.conv3 = nn.Conv2d(32, 64, kernel_size=3, padding=1)
-        self.bn3 = nn.BatchNorm2d(64)
-        self.pool3 = nn.MaxPool2d(2)
-
-        self.global_pool = nn.AdaptiveAvgPool2d((1, 1))
-
-        self.fc = nn.Linear(64, num_classes)
-
+        super(CNNLSTM, self).__init__()
+        self.conv1 = nn.Conv2d(2, 32, kernel_size=3, padding=1)
+        self.bn1 = nn.BatchNorm2d(32)
+        self.conv2 = nn.Conv2d(32, 64, kernel_size=3, padding=1)
+        self.bn2 = nn.BatchNorm2d(64)
+        self.pool = nn.MaxPool2d(2, 2)
+        self.lstm = nn.LSTM(
+            input_size=2048,
+            hidden_size=128,
+            num_layers=2,
+            batch_first=True,
+            bidirectional=True
+        )
+        self.fc = nn.Linear(256, num_classes)
     def forward(self, x):
-        
-        x = self.pool1(F.relu(self.bn1(self.conv1(x))))
-        x = self.pool2(F.relu(self.bn2(self.conv2(x))))
-        x = self.pool3(F.relu(self.bn3(self.conv3(x))))
-
-        x = self.global_pool(x) 
-        x = x.view(x.size(0), -1) 
-
+        x = self.pool(F.relu(self.bn1(self.conv1(x))))
+        x = self.pool(F.relu(self.bn2(self.conv2(x))))
+        b, c, h, t = x.size()
+        x = x.permute(0, 3, 1, 2)
+        x = x.reshape(b, t, c*h)
+        x, _ = self.lstm(x)
+        x = x[:, -1, :]
         x = self.fc(x)
         return x
