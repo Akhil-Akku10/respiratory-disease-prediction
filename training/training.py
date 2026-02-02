@@ -4,12 +4,16 @@ import torch
 import torch.nn as nn
 import matplotlib.pyplot as plt
 import seaborn as sns
-from sklearn.metrics import confusion_matrix
+
 from torch.utils.data import DataLoader
-from sklearn.metrics import balanced_accuracy_score, classification_report
+from sklearn.metrics import balanced_accuracy_score, classification_report, confusion_matrix
+
 sys.path.append(os.path.dirname(os.path.dirname(__file__)))
+
 from dataset.lung_dataset import LungSoundDataset
-from models.simple_cnn import SimpleCNN
+from models.simple_cnn import CNNLSTM
+import models.simple_cnn
+print("MODEL FILE:", models.simple_cnn.__file__)
 from config import processed_path, batch_size, epoch, learning_rate
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print("Using device:", device)
@@ -23,22 +27,33 @@ train_loader = DataLoader(
 )
 
 print("Total training samples:", len(dataset))
+
 counts = torch.tensor([5746, 322, 220, 104, 285], dtype=torch.float)
 
 class_weights = counts.sum() / (len(counts) * counts)
 class_weights = class_weights.to(device)
 
 print("Class weights:", class_weights)
-model = SimpleCNN(num_classes=5).to(device)
+
+model = CNNLSTM(num_classes=5).to(device)
+
+
 criterion = nn.CrossEntropyLoss(weight=class_weights)
+
 optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
+
 scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
     optimizer,
     mode="min",
     factor=0.5,
     patience=5
 )
+
 best_bal_acc = 0.0
+
+patience = 7 
+wait = 0
+os.makedirs("checkpoints", exist_ok=True)
 
 for ep in range(epoch):
 
@@ -48,6 +63,7 @@ for ep in range(epoch):
     all_preds = []
     all_labels = []
 
+
     for X, y in train_loader:
 
         X = X.to(device)
@@ -56,6 +72,7 @@ for ep in range(epoch):
         optimizer.zero_grad()
 
         outputs = model(X)
+
         loss = criterion(outputs, y)
 
         loss.backward()
@@ -68,21 +85,31 @@ for ep in range(epoch):
         all_preds.extend(preds.cpu().numpy())
         all_labels.extend(y.cpu().numpy())
 
-
     avg_loss = running_loss / len(train_loader)
 
     bal_acc = balanced_accuracy_score(all_labels, all_preds)
 
     scheduler.step(avg_loss)
-    if bal_acc > best_bal_acc:
-        best_bal_acc = bal_acc
 
-        os.makedirs("checkpoints", exist_ok=True)
+    if bal_acc > best_bal_acc:
+
+        best_bal_acc = bal_acc
+        wait = 0
 
         torch.save(model.state_dict(), "checkpoints/best_model.pth")
 
-        print("✅ Best model saved!")
+        print("Best model saved (improved)!")
 
+    else:
+
+        wait += 1
+
+        print(f"No improvement for {wait} epochs")
+
+        if wait >= patience:
+
+            print("Early stopping triggered!")
+            break
 
     print(
         f"Epoch [{ep+1}/{epoch}] "
@@ -90,12 +117,11 @@ for ep in range(epoch):
         f"Balanced Acc: {bal_acc:.4f} "
         f"LR: {optimizer.param_groups[0]['lr']:.6f}"
     )
+
 print("\nFinal Classification Report:")
 print(classification_report(all_labels, all_preds))
 cm = confusion_matrix(all_labels, all_preds)
-
 plt.figure(figsize=(7, 6))
-
 sns.heatmap(
     cm,
     annot=True,
@@ -104,13 +130,11 @@ sns.heatmap(
     xticklabels=[0, 1, 2, 3, 4],
     yticklabels=[0, 1, 2, 3, 4]
 )
-
 plt.xlabel("Predicted Label")
 plt.ylabel("True Label")
 plt.title("Confusion Matrix - Lung Sound Classification")
-
 plt.tight_layout()
 plt.savefig("checkpoints/confusion_matrix.png")
 plt.show()
-torch.save(model.state_dict(), "checkpoints/simple_cnn.pth")
-print("Model saved to checkpoints/simple_cnn.pth")
+torch.save(model.state_dict(), "checkpoints/last_model.pth")
+print("Model saved to checkpoints/last_model.pth")
