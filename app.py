@@ -5,12 +5,17 @@ import numpy as np
 import os
 import webbrowser
 import torch.nn.functional as F
-from models.simple_cnn import SimpleCNN
+
+from models.simple_cnn import CNNLSTM
 from config import sample_rate, n_mels
+
+
 app = Flask(__name__)
+
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print("Using device:", DEVICE)
-model = SimpleCNN(num_classes=5).to(DEVICE)
+
+model = CNNLSTM(num_classes=5).to(DEVICE)
 
 model.load_state_dict(
     torch.load(
@@ -28,10 +33,7 @@ CLASSES = [
     "Bronchiectasis",  
     "Pneumonia"        
 ]
-
-
-def audio_to_logmel(y, sr):
-
+def extract_features(y, sr):
     mel = librosa.feature.melspectrogram(
         y=y,
         sr=sr,
@@ -39,9 +41,14 @@ def audio_to_logmel(y, sr):
     )
 
     logmel = librosa.power_to_db(mel, ref=np.max)
+    mfcc = librosa.feature.mfcc(
+        y=y,
+        sr=sr,
+        n_mfcc=n_mels
+    )
+    feature = np.stack([logmel, mfcc], axis=0)
 
-    return logmel
-
+    return feature
 
 def pad_or_crop(spec, max_len=300):
     if spec.dim() == 4:
@@ -49,32 +56,31 @@ def pad_or_crop(spec, max_len=300):
         b, c, h, t = spec.shape
 
         if t < max_len:
-            pad_amount = max_len - t
-            spec = F.pad(spec, (0, pad_amount))
+            pad = max_len - t
+            spec = F.pad(spec, (0, pad))
         else:
             spec = spec[:, :, :, :max_len]
-            
+
     elif spec.dim() == 3:
 
         c, h, t = spec.shape
 
         if t < max_len:
-            pad_amount = max_len - t
-            spec = F.pad(spec, (0, pad_amount))
+            pad = max_len - t
+            spec = F.pad(spec, (0, pad))
         else:
             spec = spec[:, :, :max_len]
 
     return spec
 
-
-
 def preprocess_audio(file_path):
+
     y, sr = librosa.load(file_path, sr=sample_rate)
-    feature = audio_to_logmel(y, sr)
+    feature = extract_features(y, sr)
     feature = torch.tensor(
         feature,
         dtype=torch.float32
-    ).unsqueeze(0).unsqueeze(0)
+    ).unsqueeze(0) 
     feature = pad_or_crop(feature, max_len=300)
 
     return feature.to(DEVICE)
@@ -92,8 +98,6 @@ def index():
         file = request.files.get("audio")
 
         if file:
-
-            # Save file
             upload_dir = "uploads"
             os.makedirs(upload_dir, exist_ok=True)
 
@@ -101,12 +105,8 @@ def index():
 
             file.save(file_path)
 
-
-            # Preprocess
             x = preprocess_audio(file_path)
 
-
-            # Predict
             with torch.no_grad():
 
                 out = model(x)
@@ -114,7 +114,6 @@ def index():
                 probs = torch.softmax(out, dim=1)
 
                 pred = torch.argmax(probs, dim=1).item()
-
 
                 prediction = CLASSES[pred]
 
@@ -131,7 +130,8 @@ def index():
         classes=CLASSES
     )
 
-
 if __name__ == "__main__":
+
     webbrowser.open("http://127.0.0.1:5000")
+
     app.run(debug=True)
