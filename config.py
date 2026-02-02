@@ -6,10 +6,9 @@ pitch_shift=[-1,1]
 time_stretch=[0.95,1.05]
 noise_std=0.005
 gain_range=[0.95,1.05]
-
-batch_size=32
-epoch=50
-learning_rate=1e-4
+learning_rate = 3e-4
+epoch = 80
+batch_size = 16
 focal_gamma=2
 
 raw_audio_path=r"C:\Users\akhil\Desktop\respiration\data\raw_data"
