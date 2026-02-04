@@ -6,7 +6,7 @@ import os
 import webbrowser
 import torch.nn.functional as F
 
-from models.simple_cnn import CNNLSTM
+from models.custom import custommodel
 from config import sample_rate, n_mels
 
 
@@ -15,11 +15,11 @@ app = Flask(__name__)
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print("Using device:", DEVICE)
 
-model = CNNLSTM(num_classes=5).to(DEVICE)
+model = custommodel(num_classes=5).to(DEVICE)
 
 model.load_state_dict(
     torch.load(
-        "checkpoints/best_model.pth",
+        "checkpoints/best_model1.pth",
         map_location=DEVICE,
         weights_only=True
     )
