@@ -4,16 +4,13 @@ import torch
 import torch.nn as nn
 import matplotlib.pyplot as plt
 import seaborn as sns
-
 from torch.utils.data import DataLoader
 from sklearn.metrics import balanced_accuracy_score, classification_report, confusion_matrix
-
 sys.path.append(os.path.dirname(os.path.dirname(__file__)))
-
 from dataset.lung_dataset import LungSoundDataset
-from models.simple_cnn import CNNLSTM
-import models.simple_cnn
-print("MODEL FILE:", models.simple_cnn.__file__)
+from models.custom import custommodel
+import models.custom
+print("MODEL FILE:", models.custom.__file__)
 from config import processed_path, batch_size, epoch, learning_rate
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print("Using device:", device)
@@ -35,7 +32,7 @@ class_weights = class_weights.to(device)
 
 print("Class weights:", class_weights)
 
-model = CNNLSTM(num_classes=5).to(device)
+model = custommodel(num_classes=5).to(device)
 
 
 criterion = nn.CrossEntropyLoss(weight=class_weights)
@@ -96,7 +93,7 @@ for ep in range(epoch):
         best_bal_acc = bal_acc
         wait = 0
 
-        torch.save(model.state_dict(), "checkpoints/best_model.pth")
+        torch.save(model.state_dict(), "checkpoints/best_model1.pth")
 
         print("Best model saved (improved)!")
 
