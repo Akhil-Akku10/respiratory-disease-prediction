@@ -4,7 +4,7 @@ import torch.nn.functional as F
 class custommodel(nn.Module):
     def __init__(self, num_classes=5):
         super(custommodel, self).__init__()
-        self.conv1 = nn.Conv2d(2, 32, 3, padding=1)
+        self.conv1 = nn.Conv2d(4, 32, 3, padding=1)
         self.bn1 = nn.BatchNorm2d(32)
         self.conv2 = nn.Conv2d(32, 64, 3, padding=1)
         self.bn2 = nn.BatchNorm2d(64)
