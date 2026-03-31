@@ -1,0 +1,113 @@
+DISEASE: Upper Respiratory Tract Infection (URTI)
+
+OVERVIEW
+Upper Respiratory Tract Infection (URTI) refers to acute infections involving the structures of the upper respiratory tract including the nose, sinuses, pharynx, larynx, and trachea. URTIs are the most common acute illnesses in humans and the leading cause of healthcare visits worldwide. The vast majority (over 90%) are caused by viruses. Common clinical presentations include the common cold (rhinovirus), pharyngitis, sinusitis, laryngitis, and tonsillitis. URTIs are highly contagious and spread through respiratory droplets, aerosols, and direct contact with contaminated surfaces. Most URTIs are self-limiting and resolve within 7–14 days.
+
+TYPES OF URTI
+- Common Cold (Rhinitis/Nasopharyngitis): Most common URTI; caused primarily by rhinovirus (30–50%), coronavirus, RSV, parainfluenza
+- Pharyngitis/Tonsillitis: Infection of the throat and tonsils; viral (80%) or bacterial (Group A Streptococcus — 20%)
+- Sinusitis (Rhinosinusitis): Inflammation of the paranasal sinuses; acute bacterial sinusitis follows viral URTI in ~2% of cases
+- Laryngitis: Inflammation of the larynx causing hoarseness or voice loss
+- Epiglottitis: Serious infection of the epiglottis (more common in children); can cause airway obstruction — medical emergency
+- Croup (Laryngotracheobronchitis): Viral infection causing characteristic barking cough, mainly in children aged 6 months to 3 years
+
+CAUSATIVE AGENTS
+Viral (most common):
+- Rhinovirus (most common — over 100 serotypes)
+- Coronavirus (including SARS-CoV-2)
+- Influenza virus (A and B)
+- Parainfluenza virus
+- Respiratory Syncytial Virus (RSV)
+- Adenovirus
+- Enterovirus
+- Metapneumovirus
+
+Bacterial (less common, but important to identify):
+- Group A Streptococcus pyogenes (strep throat)
+- Streptococcus pneumoniae
+- Haemophilus influenzae
+- Moraxella catarrhalis
+- Bordetella pertussis (whooping cough)
+- Mycoplasma pneumoniae (atypical)
+
+SYMPTOMS
+- Nasal congestion and runny nose (rhinorrhea)
+- Sneezing
+- Sore throat, scratchiness, or irritation
+- Cough (dry or productive)
+- Hoarseness or loss of voice
+- Mild fever (usually < 38.5°C in adults; higher in children)
+- Headache and facial pressure (sinusitis)
+- Fatigue and general malaise
+- Mild body aches and muscle pains
+- Reduced sense of smell and taste
+- Swollen lymph nodes in the neck (lymphadenopathy)
+- Ear fullness or earache (due to Eustachian tube involvement)
+
+DIAGNOSIS
+- Clinical diagnosis based on history and physical examination in most cases
+- Throat swab culture or rapid antigen test for Group A Streptococcus
+- Nasal swab for influenza rapid antigen test or PCR
+- COVID-19 rapid antigen test or PCR
+- Full blood count (FBC): lymphocytosis suggests viral; neutrophilia suggests bacterial
+- C-reactive protein (CRP) and ESR may be elevated in bacterial infections
+- Monospot test if Epstein-Barr virus (infectious mononucleosis) suspected
+- CT sinuses if chronic or complicated sinusitis suspected
+- Nasopharyngeal swab for RSV (especially in infants and elderly)
+
+FATALITY AND COMPLICATIONS
+URTIs are generally mild and self-limiting with very low mortality in healthy adults. However, complications can be serious, especially in vulnerable populations:
+- Otitis media (middle ear infection) — especially in children
+- Sinusitis — acute bacterial sinusitis in ~2% of viral URTIs
+- Lower respiratory tract extension: bronchitis, pneumonia
+- Peritonsillar abscess (quinsy) — collection of pus beside the tonsil
+- Retropharyngeal abscess — deep neck space infection
+- Meningitis (rare, from sinusitis spreading intracranially)
+- Rheumatic fever — follows untreated Group A strep pharyngitis; can cause permanent heart valve damage
+- Post-streptococcal glomerulonephritis — kidney inflammation after strep infection
+- Febrile seizures in young children with high fever
+- Exacerbation of asthma or COPD
+
+TREATMENT AND MEDICATIONS
+For Viral URTI (symptomatic management):
+- Rest and adequate hydration (8–10 glasses of water/day)
+- Paracetamol (acetaminophen) 500–1000mg every 4–6 hours for fever and pain relief
+- Ibuprofen 400mg every 6–8 hours (anti-inflammatory and antipyretic)
+- Decongestants: Pseudoephedrine, Oxymetazoline nasal spray (max 3–5 days to avoid rebound congestion)
+- Antihistamines: Chlorphenamine, Loratadine — for runny nose and sneezing
+- Saline nasal rinse or spray (nasal irrigation) — reduces congestion naturally
+- Throat lozenges with benzocaine or antiseptic for sore throat
+- Honey and lemon (evidence-based for cough suppression, especially in children)
+- Steam inhalation with eucalyptus oil for nasal congestion relief
+- Zinc lozenges within 24 hours of symptom onset — may reduce cold duration by 1–2 days
+- Vitamin C supplementation — modest benefit in reducing cold duration
+
+For Bacterial URTI (antibiotics required):
+- Group A Strep pharyngitis: Phenoxymethylpenicillin (Penicillin V) for 10 days; Amoxicillin 500mg TDS for 10 days; Erythromycin for penicillin-allergic patients
+- Acute bacterial sinusitis: Amoxicillin-clavulanate 875/125mg BD for 5–7 days; Doxycycline as alternative
+- Epiglottitis: IV Ceftriaxone + airway management in hospital
+- Pertussis: Azithromycin 500mg day 1, then 250mg days 2–5
+
+Antiviral Therapy:
+- Influenza: Oseltamivir (Tamiflu) 75mg BD for 5 days — most effective within 48 hours of symptom onset
+- COVID-19: Nirmatrelvir/ritonavir (Paxlovid) for high-risk patients
+
+HEALTH TIPS AND RECOVERY
+1. Rest and sleep adequately — most URTIs resolve in 7–10 days with sufficient rest; pushing through illness prolongs recovery and increases risk of complications
+2. Stay well-hydrated — drink warm fluids (herbal teas, warm water with honey and ginger, broths) to soothe the throat, thin mucus secretions, and maintain hydration
+3. Practice good hand hygiene — wash hands with soap and water for at least 20 seconds frequently, especially before eating and after blowing your nose; this is the most effective way to prevent spreading URTI to others
+4. Avoid antibiotics unless prescribed — overuse leads to antibiotic resistance; viral URTIs do not respond to antibiotics
+5. Gargle with warm salt water (1/4 to 1/2 teaspoon of salt in 8 ounces of warm water) several times daily to reduce throat inflammation and kill surface bacteria
+6. Use a humidifier to add moisture to the air — dry air worsens nasal congestion and throat irritation
+7. Avoid smoking and secondhand smoke during and after recovery — smoke irritates already inflamed airways and significantly delays healing
+8. Return to doctor if symptoms worsen after day 7, fever exceeds 39°C, difficulty breathing develops, or stiff neck occurs (meningism)
+
+PREVENTION
+- Regular handwashing is the single most effective prevention measure
+- Annual influenza vaccination
+- Avoid close contact with infected individuals
+- Cover mouth and nose when coughing or sneezing (respiratory hygiene)
+- Avoid touching face, especially eyes, nose, and mouth
+- Adequate sleep (7–9 hours) and stress management maintain immune function
+- Regular moderate exercise boosts immune system
+- Vitamin D and zinc supplementation may reduce frequency of URTIs

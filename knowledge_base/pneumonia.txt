@@ -1,0 +1,153 @@
+DISEASE: Pneumonia
+
+OVERVIEW
+Pneumonia is an acute infection of the lung parenchyma (the functional tissue of the lung) that causes inflammation of the alveoli (air sacs), which fill with fluid, pus, or cellular debris, impairing gas exchange. It is one of the most common and serious infectious diseases worldwide and is the leading infectious cause of death in children under 5 years. Pneumonia can affect one or both lungs and can range from mild (walking pneumonia) to life-threatening. It is classified by site of acquisition (community-acquired, hospital-acquired, ventilator-associated), causative organism, and anatomical pattern (lobar, bronchopneumonia, interstitial).
+
+CLASSIFICATION
+Community-Acquired Pneumonia (CAP):
+Acquired outside of hospital or within 48 hours of admission. The most common form, affecting millions annually.
+
+Hospital-Acquired Pneumonia (HAP):
+Develops ≥ 48 hours after hospital admission. Associated with more resistant organisms and higher mortality.
+
+Ventilator-Associated Pneumonia (VAP):
+Occurs in mechanically ventilated patients ≥ 48 hours after intubation.
+
+Aspiration Pneumonia:
+Results from inhalation of oral/gastric contents into the lower respiratory tract. Common in patients with impaired consciousness, dysphagia, or reflux.
+
+Pneumonia in Immunocompromised Host:
+Patients with HIV, organ transplants, or on immunosuppressants are susceptible to opportunistic organisms including Pneumocystis jirovecii (PCP).
+
+CAUSATIVE ORGANISMS
+Typical Bacteria:
+- Streptococcus pneumoniae (pneumococcus) — most common cause of CAP (30–40%)
+- Haemophilus influenzae — common in COPD patients and elderly
+- Staphylococcus aureus — post-influenza pneumonia; often severe; MRSA a concern in hospital settings
+- Klebsiella pneumoniae — alcoholics, diabetics; produces "currant jelly" sputum
+- Gram-negative enteric bacteria (E. coli, Pseudomonas) — hospital-acquired, immunocompromised
+
+Atypical Bacteria:
+- Mycoplasma pneumoniae — most common cause in young adults and children; "walking pneumonia"
+- Chlamydophila pneumoniae
+- Legionella pneumophila — linked to contaminated water systems (air conditioning, cooling towers); causes Legionnaires' disease
+
+Viruses:
+- Influenza A and B — most common viral cause; secondary bacterial pneumonia is serious complication
+- SARS-CoV-2 (COVID-19) — causes viral pneumonitis and acute respiratory distress syndrome (ARDS)
+- Respiratory Syncytial Virus (RSV) — major cause in infants and elderly
+- Adenovirus, Parainfluenza, Metapneumovirus
+
+Fungi (mainly immunocompromised):
+- Pneumocystis jirovecii (PCP) — AIDS-defining illness; CD4 < 200 cells/μL
+- Aspergillus fumigatus — invasive aspergillosis in neutropenic patients
+- Cryptococcus neoformans — HIV patients
+- Histoplasma, Coccidioides — endemic mycoses
+
+SYMPTOMS
+- Cough — initially dry, then productive with purulent (yellow/green) or rusty-colored sputum
+- High fever (38–40°C or higher) with rigors and chills
+- Pleuritic chest pain — sharp, worse on inspiration and coughing (suggests pleural involvement)
+- Shortness of breath (dyspnea) — ranging from mild to severe respiratory distress
+- Rapid breathing (tachypnea > 20 breaths/min)
+- Rapid heart rate (tachycardia > 100 bpm)
+- Fatigue and general weakness
+- Headache, myalgia (especially atypical pneumonia — Mycoplasma)
+- Reduced oxygen saturation (SpO2 < 94% in moderate-severe pneumonia)
+- Confusion and altered mental status — especially in elderly (may be presenting symptom)
+- Nausea, vomiting, loss of appetite
+- Diarrhea (Legionella pneumonia)
+- Cyanosis (bluish discoloration) in severe hypoxemia
+
+CLINICAL SIGNS ON EXAMINATION
+- Fever, tachycardia, tachypnea, low O2 saturation
+- Reduced air entry over affected lung area on auscultation
+- Dullness to percussion over consolidated lobe
+- Bronchial breathing over consolidation
+- Crackles (crepitations) on auscultation
+- Pleural rub if pleural involvement
+- Signs of sepsis in severe pneumonia
+
+DIAGNOSIS
+- Chest X-ray: consolidation (airspace opacity), air bronchograms, parapneumonic effusion
+- High-resolution CT chest: more sensitive; shows ground-glass opacities, consolidation, interstitial changes
+- Full blood count: raised WBC with neutrophilia (bacterial); lymphocytosis (viral); leukopenia in severe sepsis (poor prognosis sign)
+- C-Reactive Protein (CRP) and Procalcitonin: elevated in bacterial pneumonia; guides antibiotic duration
+- Urea, electrolytes, creatinine: assess renal function (part of severity scoring)
+- Liver function tests: Legionella may cause elevated LFTs
+- Blood cultures (2 sets before antibiotics) — positive in 5–14% of CAP cases
+- Sputum Gram stain and culture — identify causative organism and sensitivities
+- Urinary antigen tests: Streptococcus pneumoniae antigen, Legionella antigen (rapid, highly specific)
+- Nasopharyngeal swab: influenza PCR, COVID-19 PCR, respiratory virus panel
+- Serology (Mycoplasma, Chlamydia) — retrospective diagnosis
+- Bronchoalveolar lavage (BAL): for immunocompromised patients or diagnostic uncertainty
+- Severity scoring:
+  - CURB-65: Confusion, Urea >7mmol/L, RR ≥30, BP <90/60mmHg, Age ≥65 — score 0–1: home treatment; 2: hospital; 3–5: ICU consideration
+  - PSI/PORT score: more comprehensive 20-variable scoring system
+
+FATALITY AND PROGNOSIS
+Pneumonia is the 6th leading cause of death worldwide. Mortality varies significantly with severity and patient factors. Outpatient CAP: mortality <1%. Hospitalized CAP: mortality 5–15%. ICU-admitted pneumonia (severe CAP): mortality 20–50%. Bacteremic pneumococcal pneumonia: mortality 15–20%. In the elderly (>75 years): mortality may exceed 25% even with hospitalization. Prognostic factors: age, comorbidities, causative organism, severity score, time to antibiotic initiation, presence of sepsis/organ failure.
+
+TREATMENT AND MEDICATIONS
+Empirical Antibiotic Therapy for CAP:
+
+Mild CAP (outpatient):
+- Amoxicillin 1g TDS for 5 days (first-line for typical CAP)
+- Doxycycline 100mg BD for 5 days (covers atypicals; penicillin allergy alternative)
+- Clarithromycin 500mg BD for 5 days (atypical coverage; not first-line due to resistance)
+
+Moderate CAP (hospitalized, non-ICU):
+- Amoxicillin-clavulanate 1.2g IV TDS + Clarithromycin 500mg BD orally/IV
+- Co-amoxiclav + Doxycycline as alternative
+- Levofloxacin 500mg OD monotherapy (if penicillin allergy or high atypical risk)
+
+Severe CAP (ICU):
+- IV Co-amoxiclav 1.2g TDS + IV Clarithromycin 500mg BD
+- Or: IV Ceftriaxone 2g OD + IV Azithromycin 500mg OD
+- If Pseudomonas risk: IV Piperacillin-tazobactam 4.5g TDS + IV Ciprofloxacin
+- If MRSA risk: Add IV Vancomycin or IV Linezolid
+
+Legionella Pneumonia:
+- Levofloxacin 750mg OD for 5 days (first-line) or Azithromycin 500mg OD for 5 days
+
+Aspiration Pneumonia:
+- Co-amoxiclav 625mg TDS or Metronidazole + Amoxicillin (anaerobic coverage)
+- Clindamycin for penicillin allergy
+
+PCP (Pneumocystis):
+- Co-trimoxazole (Trimethoprim-sulfamethoxazole): high-dose 15–20mg/kg/day TMP component for 21 days
+- Adjunctive prednisolone if PaO2 < 70mmHg to reduce inflammation
+
+Viral Pneumonia:
+- Influenza: Oseltamivir 75mg BD for 5 days (start within 48 hours for best effect)
+- COVID-19: Dexamethasone 6mg OD for 10 days (patients requiring oxygen); Remdesivir; Baricitinib
+- Supportive care: oxygen, fluid management, antipyretics
+
+Supportive Therapy:
+- Supplemental oxygen to maintain SpO2 ≥ 94% (≥ 88–92% in COPD patients)
+- IV fluids for dehydration and hypotension
+- Antipyretics: Paracetamol 1g QDS; Ibuprofen 400mg TDS
+- Deep vein thrombosis (DVT) prophylaxis: LMWH (Enoxaparin) in hospitalized patients
+- Non-invasive ventilation (CPAP/BiPAP) for respiratory failure
+- Mechanical ventilation and ICU care for ARDS or severe respiratory failure
+- Chest physiotherapy to promote secretion clearance
+
+HEALTH TIPS AND RECOVERY
+1. Complete the full course of antibiotics even if you feel better early — stopping early allows partially resistant bacteria to survive and leads to relapse; most CAP antibiotic courses are 5–7 days
+2. Rest and prioritize sleep during recovery — pneumonia recovery takes 2–6 weeks for most adults; fatigue and reduced exercise tolerance may persist for 4–8 weeks after clinical recovery; do not return to strenuous activity too soon
+3. Stay well-hydrated with at least 2–3 liters of fluid daily — hydration thins respiratory secretions making them easier to clear, maintains blood pressure, and supports kidney function when fighting serious infection
+4. Eat nutritious meals with adequate protein to support immune function and tissue repair — even small frequent meals help if appetite is poor
+5. Perform gentle deep breathing exercises and coughing to clear secretions — take 10 slow deep breaths every 1–2 hours while awake, followed by a controlled cough; this prevents atelectasis (lung collapse) and speeds recovery
+6. Attend follow-up chest X-ray 4–6 weeks after discharge — to confirm resolution of consolidation and exclude underlying malignancy (especially in smokers over 40)
+7. Get vaccinated: pneumococcal vaccine (PCV13 and PPSV23) provides substantial protection against the most common bacterial cause; annual influenza vaccine also significantly reduces pneumonia risk
+8. Seek emergency care immediately if breathing worsens, lips or fingernails turn blue, confusion develops, or heart rate exceeds 130 bpm — these are signs of impending respiratory failure
+
+PREVENTION
+- Pneumococcal vaccination (PCV13 for children; PPSV23 for adults ≥65 and high-risk groups)
+- Annual influenza vaccination
+- COVID-19 vaccination
+- Smoking cessation
+- Good hand hygiene
+- Management of underlying conditions (diabetes, heart failure, COPD)
+- Aspiration precautions in high-risk patients (head of bed elevation, feeding modifications)
+- Prophylactic antibiotics in immunocompromised patients

@@ -1,0 +1,114 @@
+DISEASE: Bronchiectasis
+
+OVERVIEW
+Bronchiectasis is a chronic lung condition characterized by permanent, abnormal widening (dilation) and thickening of the walls of the bronchi (the large airways of the lung). This structural damage impairs the normal mucociliary clearance mechanism, leading to mucus accumulation, recurrent bacterial infections, and progressive lung damage. Bronchiectasis can be classified as cylindrical (tubular), varicose, or cystic (saccular) based on the shape and extent of bronchial dilation seen on CT imaging. It may be focal (affecting one area) or diffuse (affecting both lungs). Bronchiectasis is a significant cause of chronic respiratory morbidity worldwide and its prevalence is increasing.
+
+CAUSES AND UNDERLYING CONDITIONS
+Post-Infectious (most common worldwide):
+- Pulmonary tuberculosis (TB) — most common cause in developing countries
+- Severe childhood pneumonia (measles, whooping cough, adenovirus)
+- Non-tuberculous mycobacterial (NTM) infection
+- Recurrent bacterial pneumonia
+
+Immune Deficiency States:
+- Primary immunodeficiency: Common Variable Immunodeficiency (CVID), X-linked agammaglobulinemia
+- Secondary immunodeficiency: HIV/AIDS, post-chemotherapy
+- IgA deficiency
+
+Genetic Disorders:
+- Cystic fibrosis (CF) — most common genetic cause; CFTR mutation causes thick mucus accumulation
+- Primary Ciliary Dyskinesia (PCD) — impaired cilia motility; associated with Kartagener syndrome (situs inversus + bronchiectasis + sinusitis)
+- Alpha-1 antitrypsin deficiency
+
+Inflammatory/Autoimmune:
+- Rheumatoid arthritis — lung involvement in 3–5% of cases
+- Inflammatory bowel disease (Crohn's disease, ulcerative colitis)
+- Sjögren's syndrome
+- Systemic lupus erythematosus (SLE)
+- Allergic bronchopulmonary aspergillosis (ABPA)
+
+Obstructive Causes:
+- Foreign body aspiration
+- Endobronchial tumor
+- Lymph node compression
+
+Idiopathic (no identifiable cause found in 30–50% of cases)
+
+SYMPTOMS
+- Chronic productive cough (daily, often for years) — most characteristic symptom
+- Large volumes of mucopurulent sputum (yellow or green) — classically described as "three-layered" (frothy top, mucopurulent middle, purulent sediment)
+- Hemoptysis (coughing up blood) — occurs in 50–70% of patients, usually minor but can be massive
+- Breathlessness (dyspnea) — progressive with worsening disease
+- Recurrent chest infections requiring antibiotics (≥2 per year)
+- Chest pain or discomfort
+- Wheezing
+- Fatigue and exercise intolerance
+- Clubbing of fingers (in advanced disease)
+- Coarse crackles on auscultation (mainly at lung bases or affected lobes)
+- Halitosis (bad breath) due to chronic bacterial colonization
+- Weight loss in severe or advanced disease
+- Nasal polyps and chronic sinusitis (especially in CF and PCD)
+
+DIAGNOSIS
+- High-Resolution CT Scan (HRCT) of the chest — gold standard; demonstrates bronchial dilation (internal bronchial diameter > adjacent pulmonary artery = signet ring sign), lack of bronchial tapering, and bronchial wall thickening
+- Chest X-ray (often normal or may show tram-track shadows, ring shadows, cystic spaces)
+- Sputum culture and sensitivity (Gram stain, AFB, fungal culture) — identify colonizing organisms
+- Common colonizers: Haemophilus influenzae, Pseudomonas aeruginosa, Streptococcus pneumoniae, Staphylococcus aureus, NTM
+- Spirometry: obstructive or mixed obstructive-restrictive pattern; FEV1 monitors disease progression
+- Full blood count: raised WBC, neutrophilia in exacerbations; raised eosinophils suggest ABPA
+- Serum immunoglobulins (IgG, IgA, IgM) — screen for immunodeficiency
+- Serum IgE and Aspergillus-specific IgE/IgG — screen for ABPA
+- Sweat chloride test and CFTR gene mutation analysis — rule out cystic fibrosis
+- Nasal nitric oxide + ciliary biopsy/electron microscopy — rule out PCD
+- Bronchoscopy — if foreign body or endobronchial lesion suspected; also for lavage and culture
+
+FATALITY AND PROGNOSIS
+Bronchiectasis is a chronic, progressive condition with significant morbidity. Prognosis depends on underlying cause, severity of bronchial dilation, degree of lung function impairment, and frequency of exacerbations. Patients with Pseudomonas aeruginosa colonization have significantly worse outcomes. The BSI (Bronchiectasis Severity Index) score predicts mortality and hospitalization risk. Annual mortality is approximately 2–3% per year in mild-moderate disease but rises substantially in severe disease. Key prognostic factors: FEV1, exacerbation frequency, colonizing organism, radiological extent, and exercise capacity (MRC dyspnea scale).
+
+TREATMENT AND MEDICATIONS
+Airway Clearance (cornerstone of management):
+- Active Cycle of Breathing Technique (ACBT) — breathing exercises to mobilize secretions
+- Oscillating positive expiratory pressure (OPEP) devices: Flutter, Acapella, Aerobika
+- High-frequency chest wall oscillation (HFCWO) — Vest device
+- Postural drainage (positioning to drain specific lung segments by gravity)
+- Nebulized hypertonic saline (6–7%) — enhances mucus hydration and clearance
+- Nebulized isotonic (0.9%) saline — less irritating alternative
+- Dornase alfa (rhDNase, Pulmozyme) — primarily for cystic fibrosis; not routinely used in non-CF bronchiectasis
+
+Long-term Antibiotics (for frequent exacerbators — ≥3/year):
+- Azithromycin 250–500mg 3× per week (Monday, Wednesday, Friday) — anti-inflammatory and antibacterial; reduces exacerbation frequency by ~40%
+- Erythromycin 250mg BD as alternative macrolide
+- Inhaled tobramycin or gentamicin — for Pseudomonas colonization to reduce bacterial burden
+- Inhaled colistin — for Pseudomonas-colonized patients intolerant of aminoglycosides
+- Monitor for macrolide resistance and hearing/cardiac side effects (QTc prolongation)
+
+Antibiotics for Acute Exacerbations:
+- Mild-moderate: Amoxicillin 500mg TDS or Amoxicillin-clavulanate 875/125mg BD for 14 days
+- Haemophilus influenzae: Amoxicillin, Doxycycline, Co-trimoxazole
+- Pseudomonas aeruginosa: Ciprofloxacin 750mg BD orally for 14 days; IV Piperacillin-tazobactam or Meropenem for severe cases
+- Staphylococcus aureus (MRSA): IV Vancomycin or Linezolid
+- Culture and sensitivity should guide antibiotic choice
+
+Bronchodilators:
+- Inhaled short-acting beta-agonists (SABA): Salbutamol as needed for bronchospasm
+- Long-acting bronchodilators (LABA/LAMA) if concurrent obstructive component confirmed on spirometry
+
+Management of Underlying Cause:
+- Immunoglobulin replacement therapy for primary immunodeficiency
+- CFTR modulators (Ivacaftor, Tezacaftor/Ivacaftor, Elexacaftor/Tezacaftor/Ivacaftor) for cystic fibrosis
+- Antifungal therapy (Itraconazole or Voriconazole) + corticosteroids for ABPA
+- Antituberculous therapy for active TB
+
+Surgical Options:
+- Lobectomy or segmentectomy — for focal bronchiectasis unresponsive to medical treatment
+- Bronchial artery embolization — for massive hemoptysis
+- Lung transplantation — for end-stage bilateral bronchiectasis (especially CF)
+
+HEALTH TIPS AND RECOVERY
+1. Perform airway clearance exercises every day without exception — 15–20 minutes of active cycle of breathing or use of an oscillating PEP device is the most important self-management intervention; never skip it even on good days as mucus accumulation leads to infection
+2. Stay well-hydrated by drinking at least 2–3 liters of fluid daily — adequate hydration keeps mucus thin, easier to expectorate, and reduces the risk of bacterial colonization
+3. Get vaccinated annually (influenza) and receive pneumococcal vaccine — respiratory infections are the main driver of exacerbations which cause cumulative, irreversible lung damage
+4. Recognize early signs of exacerbation (increased sputum volume, change to green/brown color, increased breathlessness, fever, blood in sputum) and seek prompt medical review to start antibiotics early — early treatment significantly reduces lung damage
+5. Avoid smoking completely and stay away from secondhand smoke and air pollution — any additional airway irritation worsens mucociliary dysfunction and promotes bacterial colonization
+6. Attend regular follow-up with a respiratory specialist including annual spirometry, sputum culture, and CT review to monitor disease progression
+7. Consider pulmonary rehabilitation — supervised exercise programs improve exercise capacity, reduce breathlessness, and improve quality of life
